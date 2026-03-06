@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Generátor emailového podpisu</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="panel form-panel">
+<h1>Generátor podpisu</h1>
+
+<label>
+Jméno a příjmení
+<input type="text" id="fullName" placeholder="Jan Novák" />
+</label>
+
+<label>
+Pozice
+<input type="text" id="position" placeholder="Člen spolku" />
+</label>
+
+<label>
+E-mail
+<input type="email" id="email" placeholder="jan.novak@email.cz" />
+</label>
+
+<label>
+Telefon
+<input type="text" id="phone" placeholder="+420 123 456 789" />
+</label>
+
+<div class="buttons">
+<button id="copyBtn">Kopírovat podpis</button>
+<button id="downloadBtn">Stáhnout HTML</button>
+</div>
+
+</div>
+
+<div class="panel preview-panel">
+<h2>Náhled</h2>
+<div id="signaturePreview"></div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
